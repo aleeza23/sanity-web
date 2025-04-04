@@ -8,7 +8,7 @@ export default async function Home() {
   // console.log(data);
 
   return (
-    <section className="flex justify-center items-center mt-28 gap-10">
+    <section className="flex flex-col lg:flex-row justify-center items-center mt-28 gap-10">
       <div className="space-y-2">
         <h1 className="text-5xl font-bold">{data.heading}</h1>
         <p className="font-light text-lg max-w-lg mb-4,">{data.subheading}</p>
