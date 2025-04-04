@@ -21,7 +21,6 @@ export default async function ProductPage({ params }) {
         <Image
           src={urlFor(product.image).url()}
           alt={product.title}
-          fill
           className="w-full h-full object-cover"
         />
         <div className="p-6">
