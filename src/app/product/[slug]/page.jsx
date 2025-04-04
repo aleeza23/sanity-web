@@ -1,5 +1,6 @@
 import { client } from '@/sanity/lib/client'
 import { urlFor } from '@/sanity/lib/image'
+import Image from 'next/image'
 
 // ✅ Dynamic Product Page
 export default async function ProductPage({ params }) {
@@ -17,9 +18,10 @@ export default async function ProductPage({ params }) {
           <h1 className="text-4xl font-bold text-gray-800 mb-6">Single Product Page</h1>
 
       <div className="bg-white max-w-xl shadow-lg rounded-xl mx-auto overflow-hidden">
-        <img
+        <Image
           src={urlFor(product.image).url()}
           alt={product.title}
+          fill
           className="w-full h-full object-cover"
         />
         <div className="p-6">

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { client } from "@/sanity/lib/client";
+import Link from "next/link";
 
 export default async function Home() {
 
@@ -11,7 +12,7 @@ export default async function Home() {
       <div className="space-y-2">
         <h1 className="text-5xl font-bold">{data.heading}</h1>
         <p className="font-light text-lg max-w-lg mb-4,">{data.subheading}</p>
-        <a href="/product/essence-mascara-lash-princess" className="bg-black text-white rounded-md px-5 mt-4 py-2 hover:opacity-75 ">Explore Products</a>
+        <Link href="/product/essence-mascara-lash-princess" className="bg-black text-white rounded-md px-5 mt-4 py-2 hover:opacity-75 ">Explore Products</Link>
       </div>
 
       <div>
